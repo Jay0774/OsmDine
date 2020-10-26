@@ -1,134 +1,91 @@
-<?xml version = "1.0" encoding = "utf-8"?>
-<RelativeLayout xmlns:android = "http://schemas.android.com/apk/res/android"
-    xmlns:tools = "http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height = "match_parent" android:paddingLeft= "@dimen/activity_horizontal_margin"
-    android:paddingRight = "@dimen/activity_horizontal_margin"
-    android:paddingTop = "@dimen/activity_vertical_margin"
-    android:paddingBottom = "@dimen/activity_vertical_margin" tools:context = ".MainActivity"
-    android:background="@drawable/background">
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textview"
-        android:layout_width="143dp"
-        android:layout_height="77dp"
-
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="135dp"
-        android:layout_marginRight="135dp"
-        android:layout_marginBottom="482dp"
-        android:text="LOGIN"
-        android:textSize="45dp"
-        android:textStyle="bold" />
-
-    <EditText
-        android:id="@+id/editText"
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/imageView"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginStart="1dp"
-        android:layout_marginLeft="1dp"
-        android:layout_marginTop="184dp"
-        android:layout_marginEnd="-1dp"
-        android:layout_marginRight="-1dp"
-        android:focusable="true"
-        android:hint="Enter Name"
-        android:textColorHighlight="#ff7eff15"
-        android:textColorHint="#ffff25e6" />
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        tools:ignore="UseCompoundDrawables">
 
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            tools:ignore="ContentDescription"
+            android:background="@drawable/logo"
+            />
 
-    <EditText
-        android:id="@+id/editText2"
-        android:layout_width="wrap_content"
+        <TextView
+            android:id="@+id/txtSlogan"
+            android:layout_gravity="center"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:text="@string/food_home"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/editText"
-        android:layout_alignRight="@+id/editText"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="-1dp"
-        android:layout_marginLeft="-1dp"
-        android:layout_marginEnd="1dp"
-        android:layout_marginRight="1dp"
-        android:layout_marginBottom="299dp"
-        android:ems="10"
-        android:hint="Password"
-        android:inputType="textPassword"
-        android:textColorHint="#ffff299f" />
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_alignParentBottom="true">
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="9dp"
-        android:layout_marginLeft="9dp"
-        android:layout_marginBottom="232dp"
-        android:text="Attempts Left:"
-        android:textStyle="bold"
-        android:textSize="25dp" />
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnSignUp"
+            android:layout_margin="8dp"
+            android:textColor="@android:color/white"
+            android:text="@string/sign_up"
+            tools:ignore="ButtonStyle" />
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/textView2"
-        android:layout_alignBottom="@+id/textView2"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginStart="127dp"
-        android:layout_marginLeft="127dp"
-        android:layout_marginTop="2dp"
-        android:layout_marginEnd="50dp"
-        android:layout_marginRight="50dp"
-        android:layout_marginBottom="-2dp"
-        android:layout_toEndOf="@+id/textView2"
-        android:layout_toRightOf="@+id/textView2"
-        android:text="New Text"
-        android:textStyle="bold"
-        android:textSize="25dp" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="170dp"
-        android:layout_height="75dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="41dp"
-        android:layout_marginLeft="41dp"
-        android:layout_marginTop="432dp"
-        android:layout_marginEnd="223dp"
-        android:layout_marginRight="223dp"
-        android:layout_marginBottom="100dp"
-        android:text="login" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="162dp"
-        android:layout_height="77dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="246dp"
-        android:layout_marginLeft="223dp"
-        android:layout_marginTop="430dp"
-        android:layout_marginEnd="26dp"
-        android:layout_marginRight="26dp"
-        android:layout_marginBottom="100dp"
-        android:text="Cancel" />
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnSignIn"
+            android:layout_margin="8dp"
+            android:textColor="@android:color/white"
+            android:text="@string/sign_in"
+            tools:ignore="ButtonStyle" />
+    </LinearLayout>
 
 </RelativeLayout>
+
+
+    <!--***DONOT WORK WITH ANDROID STUDIO > 3.0***-->
+
+    <!--<info.hoang8f.widget.FButton-->
+    <!--android:id="@+id/btnSignUp"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:layout_margin="8dp"-->
+    <!--android:textColor="@android:color/white"-->
+    <!--app:buttonColor="@color/btnSignUp"-->
+    <!--app:shadowColor="@android:color/black"-->
+    <!--app:shadowEnabled="true"-->
+    <!--app:shadowHeight="5dp"-->
+    <!--android:text="@string/sign_up"-->
+    <!--app:cornerRadius="4dp"/>-->
+
+    <!--<info.hoang8f.widget.FButton-->
+    <!--android:id="@+id/btnLogIn"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:layout_margin="8dp"-->
+    <!--android:textColor="@android:color/white"-->
+    <!--app:buttonColor="@color/btnSignActive"-->
+    <!--app:shadowColor="@android:color/black"-->
+    <!--app:shadowEnabled="true"-->
+    <!--app:shadowHeight="5dp"-->
+    <!--android:text="@string/sign_in_in"-->
+    <!--app:cornerRadius="4dp"/>-->
